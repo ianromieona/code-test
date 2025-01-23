@@ -1,0 +1,74 @@
+.shuttle {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px #d1d1d1;
+    padding: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    margin: 10px;
+
+    .btn {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        background-color: #0882d9;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #0a6fd9;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 3px 10px #7f7f7f;
+    }
+}
+
+.launchStatus {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 13px;
+    border-radius: 30px;
+
+    &.success {
+        background-color: #00d700;
+        color: #fff;
+    }
+
+    &.failed {
+        background-color: red;
+        color: white;
+    }
+
+    &.upcoming {
+        background-color: #ff9968;
+        color: #fff;
+    }
+}
+
+.launchName {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.launch-info {
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+    gap: 2em;
+
+    .launch-image {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
